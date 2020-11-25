@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-CuOF+2SnTUfTwSZjCXf01h7uYhfOBuxIhGKPbfEJ3+FqH/s6cIFN9bGr1HmAg4fQ" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/style.css">
+    <style>
+      body{       
+        background-image: url("../source/Fon.png");
+        color: black;
+      }
+      .blocks{
+       
+        color:    #FFC0CB;  
+      }
+    </style>
+    <title>Графовые БД</title>
+</head>
+<body>
+  <!--Navigation-->
+  <div class="container-xxl">      
+    <ul class="nav justify-content-center navbar-dark bg-dark ">
+        <li class="nav-item">
+        <a class="nav-link active" aria-current="page" href="main.html"><font color = #FFC0CB onMouseOver="setIfFocused(this)" onMouseOut="setIfUnfocused(this)">NoSQL</font></a>
+        </li>
+        <li class="nav-item">
+        <a class="nav-link" href="keyValue.html"><font color = #FFC0CB onMouseOver="setIfFocused(this)" onMouseOut="setIfUnfocused(this)"> БД-Ключ-Значение</font></a>
+        </li>
+        <li class="nav-item">
+        <a class="nav-link" href="document.html"><font color = #FFC0CB onMouseOver="setIfFocused(this)" onMouseOut="setIfUnfocused(this)">БД-Документы</font></a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="graphs.html"><font color = #FFC0CB onMouseOver="setIfFocused(this)" onMouseOut="setIfUnfocused(this)" >БД-Графы</font></a>
+            </li>
+        <li class="nav-item">
+            <a class="nav-link" href="inMemory.html"><font color = #FFC0CB onMouseOver="setIfFocused(this)" onMouseOut="setIfUnfocused(this)" >БД в памяти</font></a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="searching.html"><font color = #FFC0CB onMouseOver="setIfFocused(this)" onMouseOut="setIfUnfocused(this)" >Поисковые БД</font></a>
+        </li>
+    </ul>
+</div>
+    <!--main-->
+        <div class="container-xxl">      
+            
+          <div class="border border-bottom-0 border-dark border-5">
+            <img src="../source/stripe.png" class="w-100" alt="top-stripe"> 
+            <!---->
+            <div class="row g-0 bg-light position-relative bg-dark  ">
+                <!-- 1st picture-->
+              <div class="col-md-3 mb-md-0 p-md-4 bg-dark">
+                <svg  viewBox="0 0 16 16" class="bi bi-bezier w-100" fill="pink" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" d="M0 10.5A1.5 1.5 0 0 1 1.5 9h1A1.5 1.5 0 0 1 4 10.5v1A1.5 1.5 0 0 1 2.5 13h-1A1.5 1.5 0 0 1 0 11.5v-1zm1.5-.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1zm10.5.5A1.5 1.5 0 0 1 13.5 9h1a1.5 1.5 0 0 1 1.5 1.5v1a1.5 1.5 0 0 1-1.5 1.5h-1a1.5 1.5 0 0 1-1.5-1.5v-1zm1.5-.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1zM6 4.5A1.5 1.5 0 0 1 7.5 3h1A1.5 1.5 0 0 1 10 4.5v1A1.5 1.5 0 0 1 8.5 7h-1A1.5 1.5 0 0 1 6 5.5v-1zM7.5 4a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1z"/>
+                  <path d="M6 4.5H1.866a1 1 0 1 0 0 1h2.668A6.517 6.517 0 0 0 1.814 9H2.5c.123 0 .244.015.358.043a5.517 5.517 0 0 1 3.185-3.185A1.503 1.503 0 0 1 6 5.5v-1zm3.957 1.358A1.5 1.5 0 0 0 10 5.5v-1h4.134a1 1 0 1 1 0 1h-2.668a6.517 6.517 0 0 1 2.72 3.5H13.5c-.123 0-.243.015-.358.043a5.517 5.517 0 0 0-3.185-3.185z"/>
+                </svg>          
+              </div>
+              <!-- Paragraph 1-->
+              <div class="col-md-8 p-4 pl-md-0 blocks bg-dark blocks border border-5 border-dark")>                
+                <h5 onMouseOver="setIfFocused(this)" onMouseOut="setIfUnfocused(this)" class="mt-0 col-3">Графовые БД.</h5>
+                <p onMouseOver="setIfFocused(this)" onMouseOut="setIfUnfocused(this)">Графовые базы данных упрощают разработку и запуск приложений, работающих с наборами сложносвязанных данных. Типичные примеры использования графовых баз данных – социальные сети, сервисы рекомендаций, системы выявления мошенничества и графы знаний. Amazon Neptune – это полностью управляемый сервис графовых баз данных. Neptune поддерживает модель Property Graph и Resource Description Framework (RDF), предоставляя на выбор два графовых API: TinkerPop и RDF / SPARQL. К числу распространенных графовых БД относятся Neo4j и Giraph.</p>
+              
+            </div>
+
+              <!-- Paragraph 2-->
+              <div class="col-md-11  mb-md-0  p-4 pl-md-0 blocks bg-dark blocks  border  border-5 border-dark ml-1 mr-1">
+                <h5 onMouseOver="setIfFocused(this)" onMouseOut="setIfUnfocused(this)" class="mt-0 col-2">Что это такое?</h5>
+                <p onMouseOver="setIfFocused(this)" onMouseOut="setIfUnfocused(this)">Графовые базы данных предназначены для хранения взаимосвязей и навигации в них. Взаимосвязи в графовых базах данных являются объектами высшего порядка, в которых заключается основная ценность этих баз данных. В графовых базах данных используются узлы для хранения сущностей данных и ребра для хранения взаимосвязей между сущностями. Ребро всегда имеет начальный узел, конечный узел, тип и направление. Ребра могут описывать взаимосвязи типа «родитель‑потомок», действия, права владения и т. п. Ограничения на количество и тип взаимосвязей, которые может иметь узел, отсутствуют.</p>
+                    <p onMouseOver="setIfFocused(this)" onMouseOut="setIfUnfocused(this)">Обход графа в графовой базе данных можно выполнять либо по определенным типам ребер, либо по всему графу. Обход соединений или взаимосвязей в графовых базах данных выполняется очень быстро, поскольку взаимосвязи между узлами не вычисляются во время выполнения запроса, а хранятся в базе данных. Графовые базы данных имеют ряд преимуществ в таких примерах использования, как социальные сети, сервисы рекомендаций и системы выявления мошенничества, когда требуется создавать взаимосвязи между данными и быстро их запрашивать.</p>
+              <p onMouseOver="setIfFocused(this)" onMouseOut="setIfUnfocused(this)">Ниже приведен пример графа социальной сети. Имея данные о людях (узлы) и взаимосвязях между ними (ребра), можно узнать, кто является «друзьями друзей» конкретного человека (например, пользователя по имени Howard). </p>
+                  <img src="../source/grraph.png" class="w-100" alt="graph">
+            </div>              
+              <div class="col-md-4 mb-md-0 p-md-4 bg-dark">
+                <svg viewBox="0 0 16 16" class="bi bi-intersect w-100" fill="pink" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" d="M0 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v2h2a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2v-2H2a2 2 0 0 1-2-2V2zm5 10v2a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V6a1 1 0 0 0-1-1h-2v5a2 2 0 0 1-2 2H5zm6-8H6a2 2 0 0 0-2 2v5H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h8a1 1 0 0 1 1 1v2z"/>
+                </svg>
+              </div>
+              <div class="col-md-7 p-4 pl-md-0 blocks bg-dark blocks">
+                <h5 onMouseOver="setIfFocused(this)" onMouseOut="setIfUnfocused(this)" class="mt-0 col-4">Примеры использования</h5>
+                  <ul>
+                    <li onMouseOver="setIfFocused(this)" onMouseOut="setIfUnfocused(this)"> <span class="shrift-color">Выявление мошенничества</span> <br>Графовые базы данных позволяют выявлять сложные схемы мошенничества. Анализ взаимосвязей в графовых базах данных дает возможность обрабатывать финансовые операции и операции, связанные с покупками, практически в режиме реального времени. С помощью быстрых запросов к графу можно, например, определить, что потенциальный покупатель использует тот же адрес электронной почты и кредитную карту, которые уже использовались в известном случае мошенничества. Графовые базы данных также позволяют без труда обнаруживать определенные шаблоны взаимосвязей, например когда несколько человек связаны с одним персональным адресом электронной почты или когда несколько человек используют один IP‑адрес, но проживают по разным физическим адресам. </li>
+                    <li onMouseOver="setIfFocused(this)" onMouseOut="setIfUnfocused(this)"><span class="shrift-color">Сервисы рекомендаций</span><br>Графовые базы данных – хороший выбор для рекомендательных приложений. Используя графовую базу данных, можно хранить в графе взаимосвязи между такими информационными категориями, как интересы покупателя, его друзья и история его покупок. С помощью высокодоступной графовой базы данных можно рекомендовать пользователям товары на основании того, какие товары приобретали другие пользователи, которые интересуются тем же видом спорта и имеют аналогичную историю покупок. Или можно найти людей, у которых есть общий знакомый, но которые еще не знакомы друг с другом, и предложить им подружиться. </li>
+                    </ul>
+              </div>
+              <div class="col-md-10  mb-md-0  p-4 pl-md-0 blocks bg-dark blocks  border  border-5 border-dark ml-1 mr-1">
+                <h5 onMouseOver="setIfFocused(this)" onMouseOut="setIfUnfocused(this)" class="mt-0 col-2">Amazon Neptune</h5>
+                <p onMouseOver="setIfFocused(this)" onMouseOut="setIfUnfocused(this)">В основе Amazon Neptune лежит специально созданное высокопроизводительное ядро графовой базы данных, оптимизированное для хранения миллиардов взаимосвязей и выполнения запросов к графу с задержками на уровне миллисекунд. Neptune поддерживает популярные модели графов Property Graph и Resource Description Framework (RDF) консорциума W3C, а также соответствующие языки запросов – Apache TinkerPop Gremlin и SPARQL, что позволяет просто создавать запросы для эффективной навигации по наборам сложносвязанных данных. 
+
+                  В целях обеспечения высокой доступности в сервисе Neptune используются реплики чтения, возможность восстановления на момент времени, постоянное резервное копирование в Amazon S3 и репликация в разных зонах доступности. Сервис Neptune безопасен благодаря поддержке шифрования хранимых данных. Сервис Neptune полностью управляем, поэтому при работе с базами данных больше не требуется заниматься такими административными задачами, как выделение оборудования, установка исправлений ПО, установка и настройка самой базы данных, а также ее резервное копирование.</p>
+                </div>  
+            </div>          
+        </div>
+      </div>
+    <script src="../js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-popRpmFF9JQgExhfw5tZT4I9/CI5e2QcuUZPOVXb1m7qUmeR2b50u+YFEYe1wgzy" crossorigin="anonymous"></script>
+</body>
+</html>
