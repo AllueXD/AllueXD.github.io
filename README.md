@@ -1,1 +1,1 @@
-# /Pages/main.html
+# main.html
