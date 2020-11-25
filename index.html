@@ -43,24 +43,21 @@
     </ul>
 </div>
     <!--main-->
-        <div class="container-xxl">      
-            
+        <div class="container-xxl">   
           <div class="border border-bottom-0 border-dark border-5">
             <img src="source/stripe.png" class="w-100" alt="top-stripe"> 
-            <!---->
             <div class="row g-0 bg-light position-relative bg-dark  ">
-                <!-- 1st picture-->
+
               <div class="col-md-3 mb-md-0 p-md-4 bg-dark">
                 <svg  viewBox="0 0 16 16" class="bi bi-folder w-100" fill="pink" xmlns="http://www.w3.org/2000/svg">
                   <path d="M9.828 4a3 3 0 0 1-2.12-.879l-.83-.828A1 1 0 0 0 6.173 2H2.5a1 1 0 0 0-1 .981L1.546 4h-1L.5 3a2 2 0 0 1 2-2h3.672a2 2 0 0 1 1.414.586l.828.828A2 2 0 0 0 9.828 3v1z"/>
                   <path fill-rule="evenodd" d="M13.81 4H2.19a1 1 0 0 0-.996 1.09l.637 7a1 1 0 0 0 .995.91h10.348a1 1 0 0 0 .995-.91l.637-7A1 1 0 0 0 13.81 4zM2.19 3A2 2 0 0 0 .198 5.181l.637 7A2 2 0 0 0 2.826 14h10.348a2 2 0 0 0 1.991-1.819l.637-7A2 2 0 0 0 13.81 3H2.19z"/>
                 </svg>             
               </div>
-              <!-- Paragraph 1-->
+
               <div class="col-md-8 p-4 pl-md-0 blocks bg-dark blocks border border-5 border-dark")>                
                 <h5 onMouseOver="setIfFocused(this)" onMouseOut="setIfUnfocused(this)" class="mt-0 col-6">Что такое нереляционные базы данных?</h5>
                 <p onMouseOver="setIfFocused(this)" onMouseOut="setIfUnfocused(this)">Нереляционные базы данных создаются для определенных задач, для которых не оптимально использование реляционных субд. NoSQL(not only SQL) обладают гибкими схемами и позволяют разрабатывать современные приложения. Нереляционные базы данных получили широкое распространение благодаря простой разработке, функциональности и лучшей производительностью при любых масштабах.</p>
-              
             </div>
 
               <!-- Paragraph 2-->
@@ -70,7 +67,7 @@
                     Они оптимизированы для приложений, которые работают с большими обьемами данных и нуждаются в низкой задержке и гибких моделях данных.
                     Все это достигается путем смягчения жестких требований к непротиворечивости данных, характерных для других типов БД.</p>
                     <ul>
-                      <li onMouseOver="setIfFocused(this)" onMouseOut="setIfUnfocused(this)"> <div class="col-2"><div class="shrift-color">Реляционные СУБД.</div></div>                        
+                      <li onMouseOver="setIfFocused(this)" onMouseOut="setIfUnfocused(this)"> <div class="col-6"><div class="shrift-color">Реляционные СУБД.</div></div>                        
                          Записи часто разделяются на несколько частей и хранятся в отдельных таблицах, отношения между
                         которыми определяются ограничениями первичных и внешних ключей. Например, в таблице "Книги" имеются столбцы
                         "ISBN"(International serial book number), "Название книги" и "Номер издания", в таблице "Авторы" содержатся столбцы
@@ -78,7 +75,7 @@
                         образом, чтобы обеспечить целостность ссылочных данных между таблицами в базе данных. Данные нормализованы для
                         снижения избыточности и в целом оптимизированы для хранения.</li>
                         <br>
-                        <li onMouseOver="setIfFocused(this)" onMouseOut="setIfUnfocused(this)"> <div class="col-2"><div class="shrift-color">Нереляционные СУБД.</div></div>
+                        <li onMouseOver="setIfFocused(this)" onMouseOut="setIfUnfocused(this)"> <div class="col-6"><div class="shrift-color">Нереляционные СУБД.</div></div>
                           Запись о книге обычно хранится как документ формата JSON. Для каждого элемента(книги)все значения, такие как "Название", "ISBN" и прочее, будут храниться
                           в качестве атрибутов в едином документе. В такой модели данные оптимизированы для интуитивно понятной разработки и 
                           горизонтальной маштабируемости.</li>
@@ -109,7 +106,7 @@
               </div>
                 
                 <!--  Table -->
-                <table class="table table-bordered shrift-color">
+                <table class="table table-bordered shrift-color container-xxl">
                   <thead>
                     <tr>
                       <th scope="col"></th>
