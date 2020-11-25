@@ -1,0 +1,24 @@
+.shrift-color{
+  color:black;
+  background-color: #FFC0CB;
+  padding-left: 3%;
+  padding-right: 3%;
+  font-weight: 500
+  }
+.image-top-site{
+  position: relative;
+}
+.text-on-image{
+  position	: absolute;
+	top		: 200px;
+	left		: 0;
+	width		: 100%;
+}
+.borders-to-blocks{
+  border: pink;
+}
+
+.block2{
+  background-color:  pink;
+  color: black;
+}

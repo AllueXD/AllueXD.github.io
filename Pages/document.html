@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-CuOF+2SnTUfTwSZjCXf01h7uYhfOBuxIhGKPbfEJ3+FqH/s6cIFN9bGr1HmAg4fQ" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/style.css">
+    <style>
+      body{       
+        background-image: url("../source/Fon.png");
+        color: black;
+      }
+      .blocks{
+       
+        color:    #FFC0CB;  
+      }
+    </style>
+    <title>Документные базы данных</title>
+</head>
+<body>
+  <!--Navigation-->
+  <div class="container-xxl">      
+    <ul class="nav justify-content-center navbar-dark bg-dark ">
+        <li class="nav-item">
+        <a class="nav-link active" aria-current="page" href="main.html"><font color = #FFC0CB onMouseOver="setIfFocused(this)" onMouseOut="setIfUnfocused(this)">NoSQL</font></a>
+        </li>
+        <li class="nav-item">
+        <a class="nav-link" href="keyValue.html"><font color = #FFC0CB onMouseOver="setIfFocused(this)" onMouseOut="setIfUnfocused(this)"> БД-Ключ-Значение</font></a>
+        </li>
+        <li class="nav-item">
+        <a class="nav-link" href="document.html"><font color = #FFC0CB onMouseOver="setIfFocused(this)" onMouseOut="setIfUnfocused(this)">БД-Документы</font></a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="graphs.html"><font color = #FFC0CB onMouseOver="setIfFocused(this)" onMouseOut="setIfUnfocused(this)" >БД-Графы</font></a>
+            </li>
+        <li class="nav-item">
+            <a class="nav-link" href="inMemory.html"><font color = #FFC0CB onMouseOver="setIfFocused(this)" onMouseOut="setIfUnfocused(this)" >БД в памяти</font></a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="searching.html"><font color = #FFC0CB onMouseOver="setIfFocused(this)" onMouseOut="setIfUnfocused(this)" >Поисковые БД</font></a>
+        </li>
+    </ul>
+</div>
+    <!--main-->
+        <div class="container-xxl">      
+            
+          <div class="border border-bottom-0 border-dark border-5">
+            <img src="../source/stripe.png" class="w-100" alt="top-stripe"> 
+            <!---->
+            <div class="row g-0 bg-light position-relative bg-dark  ">
+                <!-- 1st picture-->
+              <div class="col-md-3 mb-md-0 p-md-4 bg-dark">
+                <svg  viewBox="0 0 16 16" class="bi bi-file-earmark w-100" fill="pink" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M4 0h5.5v1H4a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V4.5h1V14a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2z"/>
+                  <path d="M9.5 3V0L14 4.5h-3A1.5 1.5 0 0 1 9.5 3z"/>
+                </svg>               
+              </div>
+              <!-- Paragraph 1-->
+              <div class="col-md-8 p-4 pl-md-0 blocks bg-dark blocks border border-5 border-dark ")>                
+                <h5 onMouseOver="setIfFocused(this)" onMouseOut="setIfUnfocused(this)" class="mt-0 col-4">Документные базы данных.</h5>
+                <p onMouseOver="setIfFocused(this)" onMouseOut="setIfUnfocused(this)">В коде приложения данные часто представлены как объект или документ в формате, подобном JSON, поскольку для разработчиков это эффективная и интуитивная модель данных. Документные базы данных позволяют разработчикам хранить и запрашивать данные в БД с помощью той же документной модели, которую они используют в коде приложения. Гибкий, полуструктурированный, иерархический характер документов и документных баз данных позволяет им развиваться в соответствии с потребностями приложений. Документная модель хорошо работает в каталогах, пользовательских профилях и системах управления контентом, где каждый документ уникален и изменяется со временем. Amazon DocumentDB (совместимая с MongoDB) и MongoDB — распространенные документные базы данных, которые предоставляют функциональные и интуитивно понятные API для гибкой разработки.</p>
+              
+            </div>
+
+              <!-- Paragraph 2-->
+              <div class="col-md-11  mb-md-0  p-4 pl-md-0 blocks bg-dark blocks  border  border-5 border-dark ml-1 mr-1">
+                <h5 onMouseOver="setIfFocused(this)" onMouseOut="setIfUnfocused(this)" class="mt-0 col-4">Представление документной БД</h5>
+                <p onMouseOver="setIfFocused(this)" onMouseOut="setIfUnfocused(this)">Документная база данных – это тип нереляционных баз данных, предназначенный для хранения и запроса данных в виде документов в формате, подобном JSON. Документные базы данных позволяют разработчикам хранить и запрашивать данные в БД с помощью той же документной модели, которую они используют в коде приложения. Гибкий, полуструктурированный, иерархический характер документов и документных баз данных позволяет им развиваться в соответствии с потребностями приложений. Документная модель хорошо работает в таких примерах использования, как каталоги, пользовательские профили и системы управления контентом, где каждый документ уникален и изменяется со временем. Документные базы данных обеспечивают гибкость индексации, производительность выполнения стандартных запросов и аналитику наборов документов.</p>
+                    <br>
+                <p onMouseOver="setIfFocused(this)" onMouseOut="setIfUnfocused(this)" class="col-3">Пример описания книги</p>
+                <code><pre>[<br>
+                  {<br>
+                      "year" : 2013, <br>
+                      "title" : "Turn It Down, Or Else!",<br>
+                      "info" : {<br>
+                          "directors" : [ "Alice Smith", "Bob Jones"],<br>
+                          "release_date" : "2013-01-18T00:00:00Z",<br>
+                          "rating" : 6.2,<br>
+                          "genres" : ["Comedy", "Drama"],<br>
+                          "image_url" : "http://ia.media-imdb.com/images/N/O9ERWAU7FS797AJ7LU8HN09AMUP908RLlo5JF90EWR7LJKQ7@@._V1_SX400_.jpg",<br>
+                          "plot" : "A rock band plays their music at high volumes, annoying the neighbors.",<br>
+                          "actors" : ["David Matthewman", "Jonathan G. Neff"]<br>
+                      }<br>
+                  },<br>
+                  {<br>
+                      "year": 2015,<br>
+                      "title": "The Big New Movie",<br>
+                      "info": {<br>
+                          "plot": "Nothing happens at all.",<br>
+                          "rating": 0<br>
+                      }<br>
+                  }
+              ]</pre></code>
+              </div>              
+              <div class="col-md-4 mb-md-0 p-md-4 bg-dark">
+                <img src="../source/bluebd.png" width="200" height="200" alt="...">
+              </div>
+              <div class="col-md-7 p-4 pl-md-0 blocks bg-dark blocks">
+                <h5 onMouseOver="setIfFocused(this)" onMouseOut="setIfUnfocused(this)" class="mt-0 col-5">Примеры использования</h5>                
+                  <ul>
+                    <li onMouseOver="setIfFocused(this)" onMouseOut="setIfUnfocused(this)"> <span class="shrift-color">Управление контентом</span> <br>Документная база данных – отличный выбор для приложений управления контентом, таких как платформы для блогов и размещения видео. При использовании документной базы данных каждая сущность, отслеживаемая приложением, может храниться как отдельный документ. Документная база данных позволяет разработчику с удобством обновлять приложение при изменении требований. Кроме того, если необходимо изменить модель данных, то требуется обновление только затронутых этим изменением документов. Для внесения изменений нет необходимости обновлять схему и прерывать работу базы данных. </li>
+                    <li onMouseOver="setIfFocused(this)" onMouseOut="setIfUnfocused(this)"><span class="shrift-color">Каталоги</span><br>Документные базы данных эффективны для хранения каталожной информации. Например, в приложениях для интернет‑коммерции разные товары обычно имеют различное количество атрибутов. Управление тысячами атрибутов в реляционных базах данных неэффективно. Кроме того, количество атрибутов влияет на производительность чтения. При использовании документной базы данных атрибуты каждого товара можно описать в одном документе, что упрощает управление и повышает скорость чтения. Изменение атрибутов одного товара не повлияет на другие товары.</li>
+                    </ul>
+              </div>
+              <div class="col-md-10  mb-md-0  p-4 pl-md-0 blocks bg-dark blocks  border  border-5 border-dark ml-1 mr-1">
+                <h5 onMouseOver="setIfFocused(this)" onMouseOut="setIfUnfocused(this)" class="mt-0 col-5">Документные базы данных на AWS</h5>
+                <p onMouseOver="setIfFocused(this)" onMouseOut="setIfUnfocused(this)">Amazon DocumentDB (совместима с MongoDB) — это быстрая, масштабируемая, высокодоступная и полностью управляемая документная база данных, которая поддерживает рабочие нагрузки MongoDB. Разработчики могут использовать в Amazon DocumentDB такой же код приложения, драйверы и инструменты для запуска, управления и масштабирования рабочей нагрузки, что и в MongoDB, при этом получая высокопроизводительную, масштабируемую и готовую к работе базу данных и не тратя время на управление базовой инфраструктурой.</p>
+                
+              </div>   
+            </div>          
+        </div>
+      </div>  
+      <script src="../js/main.js"></script>   
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-popRpmFF9JQgExhfw5tZT4I9/CI5e2QcuUZPOVXb1m7qUmeR2b50u+YFEYe1wgzy" crossorigin="anonymous"></script>
+</body>
+</html>
