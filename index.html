@@ -11,19 +11,15 @@
         background-image: url("source/Fon.png");
         color: black;
       }
-      .blocks{
-       
-        color:    #FFC0CB;  
-      }
     </style>
     <title>Нереляционные базы данных</title>
 </head>
 <body>
   <!--Navigation-->
   <div class="container-xxl">      
-    <ul class="nav justify-content-center navbar-dark bg-dark ">
+    <ul class="nav justify-content-center navbar-dark bg-dark">
         <li class="nav-item">
-        <a class="nav-link active" aria-current="page" href="index.html"><font color = #FFC0CB onMouseOver="setIfFocused(this)" onMouseOut="setIfUnfocused(this)">NoSQL</font></a>
+        <a class="nav-link" href="index.html"><font color = #FFC0CB onMouseOver="setIfFocused(this)" onMouseOut="setIfUnfocused(this)">NoSQL</font></a>
         </li>
         <li class="nav-item">
         <a class="nav-link" href="pages/keyValue.html"><font color = #FFC0CB onMouseOver="setIfFocused(this)" onMouseOut="setIfUnfocused(this)"> БД-Ключ-Значение</font></a>
@@ -47,7 +43,8 @@
         <div class="container-xxl">   
           <div class="border border-bottom-0 border-dark border-5">
             <img src="source/stripe.png" class="w-100" alt="top-stripe"> 
-            <div class="row g-0 bg-light position-relative bg-dark  ">
+
+            <div class="row g-0 bg-light position-relative bg-dark">
 
               <div class="col-md-3 mb-md-0 p-md-4 bg-dark">
                 <svg  viewBox="0 0 16 16" class="bi bi-folder w-100" fill="pink" xmlns="http://www.w3.org/2000/svg">
@@ -57,18 +54,18 @@
               </div>
 
               <div class="col-md-8 p-4 pl-md-0 blocks bg-dark blocks border border-5 border-dark")>                
-                <h5 onMouseOver="setIfFocused(this)" onMouseOut="setIfUnfocused(this)" class="mt-0 col-6">Что такое нереляционные базы данных?</h5>
+                <h5 class="mt-0 col-7">Что такое нереляционные базы данных?</h5>
                 <p onMouseOver="setIfFocused(this)" onMouseOut="setIfUnfocused(this)">Нереляционные базы данных создаются для определенных задач, для которых не оптимально использование реляционных субд. NoSQL(not only SQL) обладают гибкими схемами и позволяют разрабатывать современные приложения. Нереляционные базы данных получили широкое распространение благодаря простой разработке, функциональности и лучшей производительностью при любых масштабах.</p>
             </div>
 
               <!-- Paragraph 2-->
               <div class="col-md-11  mb-md-0  p-4 pl-md-0 blocks bg-dark blocks  border  border-5 border-dark ml-1 mr-1">
-                <h5 onMouseOver="setIfFocused(this)" onMouseOut="setIfUnfocused(this)" class="mt-0 col-12">Как работает база данных NoSQL?</h5>
+                <h5 class="mt-0 col-12">Как работает база данных NoSQL?</h5>
                 <p onMouseOver="setIfFocused(this)" onMouseOut="setIfUnfocused(this)">Нереляционные базы данных используют разнообразные модели данных для доступа и управления данными.
                     Они оптимизированы для приложений, которые работают с большими обьемами данных и нуждаются в низкой задержке и гибких моделях данных.
                     Все это достигается путем смягчения жестких требований к непротиворечивости данных, характерных для других типов БД.</p>
                     <ul>
-                      <li onMouseOver="setIfFocused(this)" onMouseOut="setIfUnfocused(this)"> <div class="col-6"><div class="shrift-color">Реляционные СУБД.</div></div>                        
+                      <li onMouseOver="setIfFocused(this)" onMouseOut="setIfUnfocused(this)"> <span class="shrift-color">Реляционные СУБД.</span>  <br>                      
                          Записи часто разделяются на несколько частей и хранятся в отдельных таблицах, отношения между
                         которыми определяются ограничениями первичных и внешних ключей. Например, в таблице "Книги" имеются столбцы
                         "ISBN"(International serial book number), "Название книги" и "Номер издания", в таблице "Авторы" содержатся столбцы
@@ -76,7 +73,7 @@
                         образом, чтобы обеспечить целостность ссылочных данных между таблицами в базе данных. Данные нормализованы для
                         снижения избыточности и в целом оптимизированы для хранения.</li>
                         <br>
-                        <li onMouseOver="setIfFocused(this)" onMouseOut="setIfUnfocused(this)"> <div class="col-6"><div class="shrift-color">Нереляционные СУБД.</div></div>
+                        <li onMouseOver="setIfFocused(this)" onMouseOut="setIfUnfocused(this)"> <span class="shrift-color">Нереляционные СУБД.</span>  <br>
                           Запись о книге обычно хранится как документ формата JSON. Для каждого элемента(книги)все значения, такие как "Название", "ISBN" и прочее, будут храниться
                           в качестве атрибутов в едином документе. В такой модели данные оптимизированы для интуитивно понятной разработки и 
                           горизонтальной маштабируемости.</li>
@@ -89,7 +86,7 @@
                 </svg>
               </div>
               <div class="col-md-7 p-4 pl-md-0 blocks bg-dark blocks">
-                <h5 onMouseOver="setIfFocused(this)" onMouseOut="setIfUnfocused(this)" class="mt-0 col-8">Для чего используют нереляционные СУБД?</h5>
+                <h5 class="mt-0 col-12">Для чего используют нереляционные СУБД?</h5>
                 <p onMouseOver="setIfFocused(this)" onMouseOut="setIfUnfocused(this)">Нереляционные СУБД хорошо подходят для приложений, где требуются гибкие масштабируемые базы данных с высокой производительностью
                   и широким функционалом, чтобы извлекать максимальное удобство пользования. Например, игры и интернет-приложения, мобильные
                   приложения и социальные сети.</p>
@@ -101,7 +98,7 @@
                   </ul>
               </div>
               <div class="col-md-10  mb-md-0  p-4 pl-md-0 blocks bg-dark blocks  border  border-5 border-dark ml-1 mr-1">
-                <h5 onMouseOver="setIfFocused(this)" onMouseOut="setIfUnfocused(this)" class="mt-0 col-8">Сравнение баз данных SQL (реляционных) и NoSQL (нереляционных)</h5>
+                <h5 class="mt-0 col-12">Сравнение баз данных SQL (реляционных) и NoSQL (нереляционных)</h5>
                 <p onMouseOver="setIfFocused(this)" onMouseOut="setIfUnfocused(this)">В течение десятилетий центральное место в разработке приложений занимала реляционная модель данных, которая использовалась в реляционных базах данных, таких как Oracle, DB2, SQL Server, MySQL и PostgreSQL. Но в середине – конце 2000‑х годов заметное распространение стали получать и другие модели данных. Для обозначения появившихся классов БД и моделей данных был введен термин «NoSQL». Часто «NoSQL» используется в качестве синонима к термину «нереляционный».</p>
                 <p onMouseOver="setIfFocused(this)" onMouseOut="setIfUnfocused(this)">Существует множество типов БД NoSQL с различными особенностями, но в таблице ниже приведены основные отличия баз данных NoSQL от SQL.</p>
               </div>
